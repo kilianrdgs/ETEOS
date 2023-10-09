@@ -1,0 +1,199 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left {
+  height: 100%;
+  width: 180px;
+  background-color: rgb(205, 13, 44);
+  border-right: 0.5px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.informations {
+  display: flex;
+  flex-grow: 1;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-grow: 1;
+
+}
+
+.right {
+  background-color: rgb(251, 247, 247);
+  border-left: 0.5px solid rgb(191, 191, 191);
+  height: 100%;
+  width: 500px;
+}
+
+nav {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.brand-logo {
+  margin: 0 auto 0 auto;
+  transform: translate(-3%);
+  height: 100px;
+  width: 100px;
+}
+.brand-logo img {
+  height: 100%;
+}
+
+.eteos-logo {
+  height: 100px;
+  width: 100%;
+  margin: 50px 0 20px 0;
+  display: flex;
+}
+.eteos-logo img {
+  margin: auto;
+  height: auto;
+  width: 80%;
+}
+
+li a {
+  display: flex;
+  color: white;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+li p {
+  display: flex;
+  align-items: center;
+}
+
+li img {
+  height: 20px;
+  margin: 0 20px 0 12%;
+}
+
+.option-article {
+  margin: 10px 0 10px 0;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.option-article p {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: red;
+}
+.btn {
+  display: flex;
+  margin: auto 0 auto 0;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  background-color: rgb(205, 13, 44);
+  height: 30px;
+  border-radius: 10px;
+  padding: 0px 15px 0px 15px;
+  cursor: pointer;
+  border: 0.1px rgb(92, 92, 92) solid;
+}
+
+.list-article {
+  flex-grow: 1;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow-y: scroll;
+}
+
+.list-article a{
+    cursor: pointer;
+}
+
+/*--------ARTICLE ---------*/
+.detail-article {
+  height: 50px;
+  border-bottom: 0.5px solid rgb(238, 238, 238);
+  display: flex;
+  justify-content: space-around;
+}
+
+.detail-article p{
+    display: flex;
+    align-items: center;
+}
+.img {
+  display: flex;
+  height: 100%;
+  width: 100px;
+}
+
+.img img{
+    margin: auto;
+    height: 80%;
+    border: 0.1px solid rgb(111, 111, 111);
+    border-radius: 5px;
+}
+
+.img p{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+#key{
+    color: rgb(205, 13, 44);
+}
+
+#owner, #country{
+    color: rgb(47, 139, 214);
+}
+
+#history{
+    color: rgb(0, 112, 204);
+    background-color: rgb(197, 223, 245);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 0 5px 0 5px;
+    font-size: 0.8rem;
+}
+@media screen and (max-width: 1366px) {
+  .informations {
+    flex-direction: column;
+  }
+  article{
+    flex-grow: 1;
+  }
+
+  .list-article {
+   height: 0px;
+  }
+  
+
+  .right {
+    width: 100%;
+    border-left: none;
+    border-top: 0.5px solid rgb(191, 191, 191);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /*RESPONSIVE A REMPLIR*/
+}
+
+@media screen and (max-width: 768px) {
+  /*RESPONSIVE A REMPLIR*/
+}
