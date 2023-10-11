@@ -96,6 +96,7 @@ li img {
 .option-article p {
   display: flex;
   align-items: center;
+  margin-left: -100px;
   font-size: 1.2rem;
   color: red;
 }
@@ -374,6 +375,16 @@ h4 {
   background-color: rgba(252, 243, 243, 0.5);
 }
 
+nav ul li a div{
+  width: 85%;
+  border-radius: 6px;
+  height: 25px;
+  margin-left: 8px;
+  display: flex;
+  background-color: white;
+  color: red;
+}
+
 @media screen and (max-width: 1366px) {
 
   nav{
@@ -402,6 +413,26 @@ h4 {
     overflow-y: scroll;
     border-left: none;
     border-top: 0.5px solid rgb(191, 191, 191);
+  }
+
+  /*---------------------------*/
+  .info-top{
+    width: 28%;
+  }
+
+  .shoes-model{
+    justify-content: space-evenly;
+  }
+
+  .shoes-model-img{
+    height: 300px;
+    width: 300px;
+
+  }
+  .shoes-model-img img{
+    margin-top: 0px;
+    height: 80%;
+
   }
 }
 
