@@ -6,6 +6,7 @@
     <title>navbar</title>
 
     <link rel="stylesheet" href="/navbar/navbar.css" />
+    <link rel="stylesheet" href="/navbar/page.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,70 +24,74 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="nav-left">
-          <div class="nav-logo">
-            <h2>HOMA</h2>
+      <section class="accueil">
+        <div class="filter-background"></div>
+        <nav>
+          <div class="nav-left">
+            <div class="nav-logo">
+              <h2>HOMA</h2>
+            </div>
           </div>
-        </div>
-        <div class="nav-right">
-          <ul class="nav-list">
-            <li><a>GAMES</a></li>
-
-            <li>
-              <div class="nav-show-detail"><a>HOMA LAB</a></div>
-            </li>
-
-            <li><a>COMMUNITY</a></li>
-            <li><a>ABOUT</a></li>
-            <li><a>CAREERS</a></li>
-            <li><a>BLOG</a></li>
-            <li>
-              <div class="nav-link-detector">
-                <div class="nav-link-b">
-                  <a>ENTER HOMA LAB</a>
+          <div class="nav-right">
+            <ul class="nav-list">
+              <li><a>GAMES</a></li>
+  
+              <li>
+                <div class="nav-show-detail"><a>HOMA LAB</a></div>
+              </li>
+  
+              <li><a>COMMUNITY</a></li>
+              <li><a>ABOUT</a></li>
+              <li><a>CAREERS</a></li>
+              <li><a>BLOG</a></li>
+              <li>
+                <div class="nav-link-detector">
+                  <div class="nav-link-b">
+                    <a>ENTER HOMA LAB</a>
+                  </div>
+                  <div class="nav-link-b-active">
+                    <a>ENTER HOMA LAB</a>
+                  </div>
                 </div>
-                <div class="nav-link-b-active">
-                  <a>ENTER HOMA LAB</a>
-                </div>
-              </div>
-            </li>
-          </ul>
-
-          <!--DETAIL-->
-          <div class="nav-detail">
-            <ul class="nav-detail-list">
-              <li>OVERVIEW</li>
-              <li>IDEAS</li>
-              <li>MARKET WATCHER</li>
-              <li>HOMA SDK</li>
-              <li>DATA ANALYTICS</li>
-              <li>SUBMISSIONS AND CREATIVES</li>
-              <li>HOMA ACADEMY</li>
+              </li>
             </ul>
-          </div>
-
-          <!--HAMBURGER-->
-          <div class="nav-hamburger" onclick="actionMenu()">
-            <ul>
-              <li><a id="nav-hamburger-text">MENU</a></li>
-            </ul>
-          </div>
-
-          <script>
-            var isActive = false;
-            var text = document.getElementById("nav-hamburger-text");
-            function actionMenu() {
-              isActive = !isActive;
-              if (isActive) {
-                text.innerHTML = "CLOSE";
-              } else {
-                text.innerHTML = "MENU";
+  
+            <!--DETAIL-->
+            <div class="nav-detail">
+              <ul class="nav-detail-list">
+                <li>OVERVIEW</li>
+                <li>IDEAS</li>
+                <li>MARKET WATCHER</li>
+                <li>HOMA SDK</li>
+                <li>DATA ANALYTICS</li>
+                <li>SUBMISSIONS AND CREATIVES</li>
+                <li>HOMA ACADEMY</li>
+              </ul>
+            </div>
+  
+            <!--HAMBURGER-->
+            <div class="nav-hamburger" onclick="actionMenu()">
+              <ul>
+                <li><a id="nav-hamburger-text">MENU</a></li>
+              </ul>
+            </div>
+  
+            <script>
+              var isActive = false;
+              var text = document.getElementById("nav-hamburger-text");
+              function actionMenu() {
+                isActive = !isActive;
+                if (isActive) {
+                  text.innerHTML = "CLOSE";
+                } else {
+                  text.innerHTML = "MENU";
+                }
               }
-            }
-          </script>
-        </div>
-      </nav>
+            </script>
+          </div>
+        </nav>
+      </section>
+      
     </header>
   </body>
 </html>

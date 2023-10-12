@@ -5,10 +5,10 @@
 }
 
 nav {
-    position: relative;
+    position: absolute;
   height: 80px;
   width: 100%;
-  background-color: rgb(180, 163, 198);
+  background-color: rgba(213, 199, 227, 0.251);
   display: flex;
   justify-content: space-between;
   border-bottom: 0.5px solid grey;
@@ -36,7 +36,7 @@ nav .nav-list {
 nav .nav-list li {
     display: flex;
     align-items: center;
-  margin-left: 100px;
+  margin-left: 120px;
   height: 100%;
   font-size: 1.4em;
   cursor: pointer;
@@ -128,12 +128,12 @@ nav ul li:hover{
 
 @media screen and (min-width:1600px) and (max-width:1920px) {
     nav .nav-list li {
-     margin-left: 60px;
+     margin-left: 80px;
     }
 }
 @media screen and (min-width:1280px) and (max-width:1600px) {
     nav .nav-list li {
-        margin-left: 60px;
+        margin-left: 70px;
         font-size: 1.1em;
        }
        .nav-logo h2{
@@ -146,7 +146,7 @@ nav ul li:hover{
 }
 @media screen and (min-width:1024px) and (max-width:1280px) {
     nav .nav-list li {
-        margin-left: 40px;
+        margin-left: 50px;
         font-size: 1em;
        }
        .nav-link-b a {
