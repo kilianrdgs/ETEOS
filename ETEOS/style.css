@@ -61,7 +61,7 @@ nav {
 .eteos-logo {
   height: 100px;
   width: 100%;
-  margin: 50px 0 20px 0;
+  margin: 50px 0 10px 0;
   display: flex;
 }
 .eteos-logo img {
@@ -73,13 +73,14 @@ nav {
 li a {
   display: flex;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-decoration: none;
 }
 
 li p {
   display: flex;
   align-items: center;
+  font-size: 0.9em;
 }
 
 li img {
@@ -135,7 +136,7 @@ li img {
   color: #2f8bd6;
 }
 
-#history, #history-1, #history-3, #history-4 {
+#history-1, #history-2, #history-3, #history-4 {
   color: rgb(0, 112, 204);
   background-color: rgb(205, 225, 241);
   margin-top: 18px;
@@ -144,7 +145,7 @@ li img {
   padding: 0 8px 0 8px;
   font-size: 0.8rem;
 }
-#history-1{
+#history-2{
   color: rgb(210, 34, 64);
   background-color: rgb(244, 207, 212);
 }
@@ -437,8 +438,13 @@ nav ul li a div{
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  /*RESPONSIVE A REMPLIR*/
+@media screen and (max-height: 700px){
+.eteos-logo{
+  display: none;
+}
+ul{
+  margin-bottom: 20px
+}
 }
 
 @media screen and (max-width: 768px) {
