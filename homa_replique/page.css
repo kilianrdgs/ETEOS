@@ -4,7 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
 }
 
@@ -13,4 +13,21 @@
     height: 100%;
     width: 100%;
     filter: blur(1px);
+}
+
+.page-2{
+    height: 100vh;
+    background: linear-gradient(rgb(255, 232, 255), rgb(255, 148, 251));
+    
+}
+
+.img-panda{
+    position: absolute;
+    height: 400px;
+    left: 60%;
+    top: 50%;
+}
+
+.img-panda img{
+    height: 100%;
 }
