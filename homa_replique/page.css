@@ -8,6 +8,17 @@
     width: 100vw;
 }
 
+.accueil h1{
+    position: absolute;
+    z-index: 105;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 10vw;
+    margin: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .filter-background{
     position: absolute;
     height: 100%;
