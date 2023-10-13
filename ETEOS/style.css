@@ -447,6 +447,11 @@ ul{
 }
 }
 
-@media screen and (max-width: 768px) {
-  /*RESPONSIVE A REMPLIR*/
-}
+@media screen and (max-height: 600px){
+  ul li{
+   font-size: 0.8em;
+  }
+  nav{
+    overflow: scroll;
+  }
+  }
